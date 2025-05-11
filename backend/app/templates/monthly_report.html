@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Activity Report - {{ date }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; padding: 20px; }
+        h2 { color: #4CAF50; }
+        .report { background-color: #f9f9f9; padding: 15px; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Monthly Activity Report - {{ date }}</h2>
+        <p>Hello {{ customer.name }},</p>
+        <p>Here is a summary of your service activity for the past month:</p>
+        <div class="report">
+            <table>
+                <tr>
+                    <th>Service Type</th>
+                    <th>Requested</th>
+                    <th>Closed</th>
+                </tr>
+                <tr>
+                    <td>All Services</td>
+                    <td>{{ services_requested }}</td>
+                    <td>{{ services_closed }}</td>
+                </tr>
+            </table>
+        </div>
+        <p>Thank you for using our platform!</p>
+        <p>Best regards,<br>Household Services Team</p>
+    </div>
+</body>
+</html>

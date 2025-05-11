@@ -1,0 +1,9 @@
+Service ID,Customer ID,Date of Request,Remarks,Status
+2,1,2025-03-30 23:05:23.979023,,pending
+
+Summary
+Total Pending Requests,1
+Total Accepted Requests,0
+Total In-Progress Requests,0
+Total Completed Requests,1
+Total Rejected Requests,0
