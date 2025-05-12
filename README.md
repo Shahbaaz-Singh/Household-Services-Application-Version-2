@@ -49,8 +49,8 @@ flask db upgrade
 from app import db
 from app.models import Admin
 
-new_admin = Admin(username="Shahbaaz")
-new_admin.set_password("superhero")
+new_admin = Admin(username="username")
+new_admin.set_password("password")
 db.session.add(new_admin)
 db.session.commit()
 ```
