@@ -31,8 +31,8 @@ def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
     
-    app.config['SECRET_KEY'] = 'Shahbaaz-Yeager'
-    app.config['JWT_SECRET_KEY'] = 'One-Key-Man'
+    app.config['SECRET_KEY'] = 'secret-key'
+    app.config['JWT_SECRET_KEY'] = 'jwt-secret-key'
     app.config['JWT_ALGORITHM'] = 'HS256'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///household_services.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
