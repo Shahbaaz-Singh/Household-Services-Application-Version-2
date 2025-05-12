@@ -1,14 +1,48 @@
 # 🏠 Household Services Application - Version 2
 
-A multi-user web application platform offering comprehensive household servicing and solutions. The system integrates user management, backend APIs, Celery tasks, Redis-based caching and rate limiting, and a Vue.js frontend.
+It is a multi-user application (requires one admin and other service professionals/customers) that acts as a platform for providing comprehensive home servicing and solutions.
 
 ---
 
+## 🧰 Frameworks to be Used
+
+These are the **mandatory** frameworks and tools on which the project is built:
+
+* **Flask** for backend APIs
+* **Vue.js** for the frontend UI
+* **Bootstrap** for styling (⚠️ No other CSS framework allowed)
+* **SQLite** for data storage (⚠️ No other DB allowed)
+* **Redis** for caching
+* **Celery + Redis** for batch jobs
+* **Jinja2 templates** (Only if needed, but **not** for UI)
+* **Vue CLI** (Advanced only if necessary)
+
+---
+
+## Project Statement
+
+The project statement for this project can be found at:
+
+[Project Statement]([https://docs.google.com/document/d/1waf_CKBLk25fkwF-R4KS7wLq4KTIPhUcAtj6if5N-zo/pub](https://docs.google.com/document/d/1g-TDnTHgpAcgMIdMYC2ePBgasJfOIkjRXvjkHjEHiqk/pub))
+
+## Project Report
+
+A detailed project report, including a comprehensive overview, technical implementation, and future enhancements, can be found at:
+
+[Project Report](https://github.com/Shahbaaz-Singh/Household-Services-Application-Version-2/blob/main/Project%20Report.pdf)
+
+The report contains:
+- **Project Overview**: Goals, scope, and purpose of the application
+- **Technical Implementation**: Frameworks used, system architecture, and database design
+- **API Endpoints Documentation**: How different users interact with the system
+- **Demo Video Links**: Showcasing the features in action
+
 ## 📁 Project Setup
 
-### 1. Clone and Setup Virtual Environment
+### 1. Clone the repo and Setup Virtual Environment
 
 ```bash
+git clone https://github.com/Shahbaaz-Singh/Household-Services-Application-Version-2
 cd Household-Services-Application-Version-2
 python -m venv venv
 venv\Scripts\activate     # On Windows
